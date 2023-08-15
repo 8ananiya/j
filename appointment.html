@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Barber - Barbers & Hair Cutting</title>
+  <meta name="title" content="Barber - Barbers & Hair Cutting">
+  <meta name="description" content="This is a barber html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favcon.png" type="image/png+xml">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300,400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - flaticon
+  -->
+  <link rel="stylesheet" href="assets/css/flaticon.min.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+  
+
+    <div class="header-bottom" data-header>
+      <div class="container">
+
+        <a href="#" class="logo">
+          Barber
+          <span class="span">Hair Salon</span>
+        </a>
+
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+
+            <li class="navbar-item">
+              <a href="PRICING.html" class="navbar-link" data-nav-link>Pricing</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="gallery.html" class="navbar-link" data-nav-link>Gallery</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="appointment.html" class="navbar-link" data-nav-link>Appointment</a>
+            </li>
+
+           
+
+          </ul>
+        </nav>
+
+       
+          <button id="menu-toggle"  class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+            <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+              <path
+                    class="line top"
+                    d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+              <path
+                    class="line middle"
+                    d="m 70,50 h -40" />
+              <path
+                    class="line bottom"
+                    d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+            </svg>
+            </button>
+   
+
+       
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+  <main>
+    <article>
+        <section class="section appoin" id="appointment" aria-label="appointment">
+            <div class="container">
+    
+              <div class="appoin-card">
+    
+                <figure class="card-banner img-holder" style="--width: 250; --height: 774;">
+                  <img src="./assets/images/appoin-banner-1.jpg" width="250" height="774" loading="lazy" alt=""
+                    class="img-cover">
+                </figure>
+    
+                <div class="card-content">
+    
+                  <h2 class="h2 section-title">Make Appointment</h2>
+    
+                  <p class="section-text">
+                    Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua
+                    suspendisse
+                  </p>
+
+                  <form action="https://formsubmit.co/4msabeba@gmail.com" method="POST" class="appoin-form">
+                    <div class="input-wrapper">
+                      <input type="text" name="name" placeholder="Your Full Name" required class="input-field">
+    
+                      <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+                    </div>
+    
+                    <div class="input-wrapper">
+                      <input type="text" name="phone" placeholder="Phone Number" required class="input-field">
+    
+                      <select name="category" class="input-field">
+    
+                        <option value="Select category">Select category</option>
+                        <option value="Adult">Adult</option>
+                        <option value="Kids">Kids</option>
+                        <option value="Cuts">Cuts</option>
+                        <option value="Styles/Relaxed Hair">Styles/Relaxed Hair</option>
+                        <option value="Hair Color">Hair Color</option>
+        
+                        <option value="Treatments">Treatments</option>
+                        <option value="Relaxer">Relaxer</option>
+                        <option value="Weave install">Weave install</option>
+                        <option value="Natural Hair Style">Natural Hair Style</option>
+    
+                      </select>
+                    </div>
+    
+                    <input type="date" name="date" required class="input-field date">
+    
+                    <textarea name="message" placeholder="Write Message" required class="input-field"></textarea>
+    
+                    <button type="submit" class="form-btn">
+                      <span class="span">Appointment Now</span>
+    
+                      <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </button>
+    
+                  </form>
+    
+                </div>
+    
+                <figure class="card-banner img-holder" style="--width: 250; --height: 774;">
+                  <img src="./assets/images/appoin-banner-2.jpg" width="250" height="774" loading="lazy" alt=""
+                    class="img-cover">
+                </figure>
+    
+              </div>
+    
+            </div>
+          </section>
+    
+        </article>
+      </main>
+      <script defer>
+        'use strict';
+    
+    
+    
+    /**
+     * add event on element
+     */
+    
+    const addEventOnElem = function (elem, type, callback) {
+      if (elem.length > 1) {
+        for (let i = 0; i < elem.length; i++) {
+          elem[i].addEventListener(type, callback);
+        }
+      } else {
+        elem.addEventListener(type, callback);
+      }
+    }
+    
+    
+    
+    /**
+     * navbar toggle
+     */
+    
+    const navbar = document.querySelector("[data-navbar]");
+    const navToggler = document.querySelector("[data-nav-toggler]");
+    const navLinks = document.querySelectorAll("[data-nav-link]");
+    
+    const toggleNavbar = () => navbar.classList.toggle("active");
+    
+    addEventOnElem(navToggler, "click", toggleNavbar);
+    
+    const closeNavbar = () => navbar.classList.remove("active");
+    
+    addEventOnElem(navLinks, "click", closeNavbar);
+    
+    
+    
+    /**
+     * header & back top btn active when scroll down to 100px
+     */
+    
+    const header = document.querySelector("[data-header]");
+    const backTopBtn = document.querySelector("[data-back-top-btn]");
+    
+    const headerActive = function () {
+      if (window.scrollY > 100) {
+        header.classList.add("active");
+        backTopBtn.classList.add("active");
+      } else {
+        header.classList.remove("active");
+        backTopBtn.classList.remove("active");
+      }
+    }
+    
+    addEventOnElem(window, "scroll", headerActive);
+    
+    
+    
+    /**
+     * filter function
+     */
+    
+    const filterBtns = document.querySelectorAll("[data-filter-btn]");
+    const filterItems = document.querySelectorAll("[data-filter]");
+    
+    let lastClickedFilterBtn = filterBtns[0];
+    
+    const filter = function () {
+      lastClickedFilterBtn.classList.remove("active");
+      this.classList.add("active");
+      lastClickedFilterBtn = this;
+    
+      for (let i = 0; i < filterItems.length; i++) {
+        if (this.dataset.filterBtn === filterItems[i].dataset.filter ||
+          this.dataset.filterBtn === "all") {
+    
+          filterItems[i].style.display = "block";
+          filterItems[i].classList.add("active");
+    
+        } else {
+    
+          filterItems[i].style.display = "none";
+          filterItems[i].classList.remove("active");
+    
+        }
+      }
+    }
+    
+    addEventOnElem(filterBtns, "click", filter);
+      </script>
+    
+      <!-- 
+        - ionicon link
+      -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    </body>
+    
+    </html>
